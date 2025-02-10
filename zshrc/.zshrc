@@ -113,3 +113,6 @@ alias gs="git status"
 
 # DEPRICATED -> moved to i3 config
 #~/.config/polybar/.config/polybar/launch_polybar.sh &
+
+# Starship startup
+eval "$(starship init zsh)"
