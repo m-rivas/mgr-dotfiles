@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,10 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git
-	archlinux
-)
+plugins=(git archlinux rust)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,14 +102,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias c="clear"
+alias as="alias | grep -i"
 alias gs="git status"
 
-# fix resolution
-# DEPRICATED -> moved to i3 config
-#xrandr --output eDP-1 --mode 1920x1080
-
-# DEPRICATED -> moved to i3 config
-#~/.config/polybar/.config/polybar/launch_polybar.sh &
-
-# Starship startup
+# Starship
 eval "$(starship init zsh)"
+
+# execute Noefetch
+neofetch
