@@ -106,6 +106,9 @@ alias c="clear"
 alias as="alias | grep -i"
 alias gs="git status"
 
+# fbt flipper zero aliases
+alias f="./fbt"
+
 # Starship
 eval "$(starship init zsh)"
 
