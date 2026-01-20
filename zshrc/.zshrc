@@ -70,7 +70,7 @@ ZSH_THEME=""
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux rust)
+plugins=(git archlinux rust docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,3 +114,6 @@ eval "$(starship init zsh)"
 
 # execute Noefetch
 neofetch
+
+# Github credentials
+export GCM_CREDENTIAL_STORE="gpg"
