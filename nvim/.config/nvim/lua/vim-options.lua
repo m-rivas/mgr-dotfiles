@@ -5,4 +5,8 @@ vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.g.mapleader = " "
 
+vim.diagnostic.config({
+  virtual_text = true,
+})
+
 
