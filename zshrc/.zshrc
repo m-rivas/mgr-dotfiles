@@ -109,6 +109,9 @@ alias gs="git status"
 # fbt flipper zero aliases
 alias f="./fbt"
 
+# use bat instead of cat
+alias cat="batcat"
+
 # Starship
 eval "$(starship init zsh)"
 
